@@ -19,8 +19,15 @@ public class App {
         //bucle para repetir el proceso hasta que el usuario adivine el número
         while (true) {
             System.out.println("Adivina el número entre 1 y 100:");
-            Scanner sc = new Scanner(System.in);
-            numeroIngresado = sc.nextInt();
+            String linea = System.console().readLine();
+            numeroIngresado = Integer.parseInt(linea);
+
+            //correr en powershel desde intellij en la carpeta src
+            //javac adivinaNumero/App.java adivinaNumero/clases/AdivinaNumero.java
+            //java adivinaNumero.App
+
+//            Scanner sc = new Scanner(System.in);
+//            numeroIngresado = sc.nextInt();
 
             intentos.add(numeroIngresado);
 
