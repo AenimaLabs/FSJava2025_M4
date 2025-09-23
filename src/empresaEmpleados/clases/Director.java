@@ -21,7 +21,7 @@ public class Director extends Gerente{
 
     @Override
     public double calcularSalarioTotal() {
-        return getSalarioBase() + getBono() + acciones;
+        return super.calcularSalarioTotal() + getBono() + acciones;
     }
 
     @Override

@@ -22,7 +22,7 @@ public class Gerente extends Empleado{
    //Sobrescribir el metodo calcularSalarioTotal
    @Override
     public double calcularSalarioTotal() {
-        return getSalarioBase() + bono;
+        return super.calcularSalarioTotal() + bono;
    }
 
    //Sobrescribir el metodo mostrarInformacion
