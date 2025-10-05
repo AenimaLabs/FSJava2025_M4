@@ -25,7 +25,7 @@ public class Inventario {
     //buscar producto por nombre
     public Producto buscarProductoPorNombre(String nombre){
         for (Producto p: productos){
-            if (p.getNombre().equals(nombre)){
+            if (p.getNombre().equalsIgnoreCase(nombre)){
                 return p;
             }
         }
@@ -33,7 +33,7 @@ public class Inventario {
     }
 
     //eliminar producto por id
-    public boolean elimarProductoPorId(int id){
+    public boolean eliminarProductoPorId(int id){
         return productos.removeIf(p -> p.getId() == id);
     }
 
